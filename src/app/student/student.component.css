@@ -1,0 +1,13 @@
+.student_text_box{
+    color: brown;
+    text-transform: uppercase;
+}
+
+.student_card {
+    width: 50%;
+}
+
+.student_container{
+    margin-left: 15px;
+    padding-left: 15px;
+}

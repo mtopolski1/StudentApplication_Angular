@@ -1,0 +1,16 @@
+<div class="student_container">
+
+    <app-student-form [currentStudent]="currentStudent" (newStudent)="onNewStudent($event)"></app-student-form>
+
+    <h2>Lists of Students</h2>
+    <div class="card student_card" *ngFor="let student of students">
+            <div class="card-body">
+                <h6>{{student.firstName }}</h6>
+                <h6>{{student.lastName}}</h6>
+                <h6>{{student.age}}</h6>
+                <h6>{{student.balanceOwed | currency}}</h6>
+                <button class="btn btn-danger" style="margin-right: 5px;" (click)="removeStudent(student)">Delete</button>
+                <button class="btn btn-dark" (click)="editStudent(student)"> Edit</button>
+            </div>
+    </div>
+</div>

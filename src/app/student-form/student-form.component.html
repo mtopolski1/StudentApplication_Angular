@@ -1,0 +1,20 @@
+<h2>Add A Student</h2>
+
+<form class="student_form">
+    <label>Student Id</label>
+    <input type="text" class="form-control" id="studentId" name="studentId" #id [(ngModel)]="currentStudent.id">
+
+    <label>First Name</label>
+    <input type="text" class="form-control" id="firstName" name="firstName" #firstName [(ngModel)]="currentStudent.firstName">
+
+    <label>Last Name</label>
+    <input type="text" class="form-control" id="lastName" name="lastName" #lastName  [(ngModel)]="currentStudent.lastName">
+
+    <label>Age</label>
+    <input type="text" class="form-control" id="age" name="age" #age  [(ngModel)]="currentStudent.age">
+
+    <label>Balance</label>
+    <input type="text" class="form-control" id="balance" name="balance" #balance  [(ngModel)]="currentStudent.balanceOwed">
+
+    <button class="btn btn-primary" (click)="addUser(id.value, firstName.value, lastName.value, age.value, balance.value)"> Add Student</button>
+</form>
